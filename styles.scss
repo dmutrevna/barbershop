@@ -1,0 +1,9 @@
+header__section {
+    color: white;
+    &__left {
+        color: red;
+    }
+    &__right {
+        color: pink;
+    }
+}
