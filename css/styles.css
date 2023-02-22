@@ -20,6 +20,9 @@
 body {
   font-family: var(--primary-font);
   line-height: 1.33;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.02em;
   margin: auto;
   padding: auto;
 }
@@ -69,13 +72,12 @@ img {
   min-width: 160px;
   height: 40px;
   font-style: inherit;
-  font-weight: 600;
   font-size: 12px;
   letter-spacing: 0.09em;
   text-transform: uppercase;
   cursor: pointer;
   color: var(--secondary-text-color-theme-dark);
-  border: 1px solid #ff6c00;
+  border: 1px solid var(--accent-color);
   border-radius: 25px;
   background-color: transparent;
   transition: var(--transition-duration-function);
@@ -87,7 +89,6 @@ img {
   color: var(--secondary-text-color-theme-dark);
 }
 .media-list-link {
-  font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.2em;
@@ -100,7 +101,6 @@ img {
   color: var(--accent-color);
 }
 .suptitle {
-  font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   text-transform: uppercase;
@@ -123,9 +123,7 @@ img {
 
 .section-description {
   font-weight: 400;
-  font-size: 18px;
   line-height: 1.67;
-  letter-spacing: 0.02em;
   color: var(--secondary-text-color-theme-light);
 }
 .subtitle-secondary {
@@ -171,9 +169,7 @@ img {
 }
 
 .menu-link {
-  font-weight: 600;
   font-size: 12px;
-  line-height: 1.33;
   letter-spacing: 0.1em;
   color: var(--secondary-text-color-theme-dark);
   transition: var(--transition-duration-function);
@@ -183,9 +179,7 @@ img {
   color: var(--accent-color);
 }
 .contact-phone-number {
-  font-weight: 600;
   font-size: 12px;
-  line-height: 1.33;
   letter-spacing: 0.1em;
   color: var(--secondary-text-color-theme-dark);
   margin-left: auto;
@@ -209,14 +203,10 @@ img {
   margin-bottom: 20px;
 }
 
-.main-title::before {
-  content: '';
-}
-
 .hero-soc {
-  width: 100px;
   display: flex;
   align-items: flex-end;
+  width: 100px;
   padding-left: 27px;
   padding-bottom: 40px;
 }
@@ -268,15 +258,12 @@ img {
 }
 
 /* ====================/HERO============= */
-
 /* ====================ABOUT============= */
 .main-description {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.86;
-  letter-spacing: 0.02em;
   color: var(--secondary-text-color-theme-light);
-
   margin-bottom: 42px;
 }
 
@@ -313,7 +300,6 @@ img {
   max-width: 470px;
 }
 /* ====================/ABOUT============= */
-
 /* ====================SERVICES============= */
 .list-prices {
   margin-bottom: 44px;
@@ -346,9 +332,7 @@ img {
 }
 .about-prices {
   font-weight: 400;
-  font-size: 18px;
   line-height: 1.67;
-  letter-spacing: 0.02em;
   color: var(--primary-text-color-theme-dark);
 }
 
@@ -376,6 +360,7 @@ img {
   align-items: baseline;
   gap: 12px;
 }
+
 .prices-item + .prices-item {
   margin-top: 20px;
 }
@@ -449,17 +434,16 @@ img {
   font-size: 42px;
   line-height: 1.36;
   letter-spacing: 0.05em;
-  color: #303030;
+  color: var(--primary-text-color-theme-light);
 }
 
 .advantage-item > span::after {
   content: '+';
-  font-weight: 600;
   font-size: 16px;
   line-height: 1.38;
   text-align: top;
   vertical-align: top;
-  color: #ff6c00;
+  color: var(--accent-color);
 }
 
 .advantage-item:nth-child(odd) {
@@ -472,10 +456,9 @@ img {
 
 .advantage-text {
   text-align: center;
-  font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
-  color: #303030;
+  color: var(--primary-text-color-theme-light);
 }
 
 /* ====================/ADVANTAGES============= */
@@ -483,10 +466,8 @@ img {
 
 .employees {
   font-weight: 400;
-  font-size: 18px;
   line-height: 1.39;
   text-align: center;
-  letter-spacing: 0.02em;
   color: var(--primary-text-color-theme-light);
   margin-bottom: 8px;
 }
@@ -496,7 +477,6 @@ img {
   font-size: 14px;
   line-height: 1.36;
   text-align: center;
-  letter-spacing: 0.02em;
   color: var(--accent-color);
   margin-bottom: 30px;
 }
@@ -545,20 +525,19 @@ img {
   border-radius: 50%;
   display: flex;
   justify-content: center;
-  background-color: #ffffff;
+  background-color: var(--secondary-text-color-theme-dark);
   align-items: center;
   transition: var(--transition-duration-function);
 }
 
 .barbers-soc-icon {
-  fill: #303030;
+  fill: var(--primary-text-color-theme-light);
 }
 
 .barbers-soc-icon:is(:hover, :focus) {
-  fill: #ff6c00;
+  fill: var(--accent-color);
 }
 /* ====================/EMPLOYEES============= */
-
 /* ====================GALLERY============= */
 
 .gallery-section {
@@ -581,24 +560,19 @@ img {
   width: calc((100% - 90px) / 4);
 }
 /* ====================/GALLERY============= */
-
 /* ====================CONTACT============= */
 
 .address {
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
   line-height: 1.67;
-  letter-spacing: 0.02em;
   color: var(--primary-text-color-theme-dark);
 }
 
 .contacts {
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
   line-height: 1.67;
-  letter-spacing: 0.02em;
   color: var(--primary-text-color-theme-dark);
 }
 
@@ -647,10 +621,8 @@ img {
   color: var(--secondary-text-color-theme-dark);
 }
 /* ====================/CONTACT============= */
-
 /* ====================FOOTER============= */
 .footer-text {
-  font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.2em;
@@ -727,7 +699,7 @@ img {
 
 .modal-close-btn:hover,
 .modal-close-btn:focus {
-  background-color: #ff6c00;
+  background-color: var(--accent-color);
 }
 
 .modal-close-btn-icon {
@@ -736,12 +708,12 @@ img {
 
 .modal-close-btn-icon:hover,
 .modal-close-btn-icon:focus {
-  fill: #ffffff;
+  fill: var(--secondary-text-color-theme-dark);
 }
 
 .modal-close-btn:hover .modal-close-btn-icon,
 .modal-close-btn:focus .modal-close-btn-icon {
-  fill: #ffffff;
+  fill: var(--secondary-text-color-theme-dark);
 }
 /* ====================/MODAL============= */
 /*====================MODAL INPUT===========*/
@@ -807,7 +779,7 @@ img {
 .modal-form-message::placeholder {
   font-weight: 400;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(117, 117, 117, 0.5);
 }
@@ -825,12 +797,12 @@ img {
 
 .modal-form-check-desc::before {
   display: block;
+  content: '';
+  cursor: pointer;
   width: 16px;
   height: 16px;
   border: 1.25px solid var(--accent-color);
   border-radius: 2px;
-  content: '';
-  cursor: pointer;
   margin-right: 10px;
 }
 
@@ -860,7 +832,7 @@ img {
 }
 
 .modal-form-submit {
-  color: #ffffff;
+  color: var(--secondary-text-color-theme-dark);
   background: var(--secondary-text-color-theme-light);
   padding: 16px 32px;
   border: none;
@@ -881,3 +853,4 @@ img {
   text-decoration: underline;
   color: var(--accent-color);
 }
+/*====================/MODAL INPUT===========*/
