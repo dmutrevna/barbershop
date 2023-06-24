@@ -27,6 +27,10 @@ body {
   padding: auto;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   width: 100%;
   max-width: 1200px;
@@ -942,6 +946,10 @@ img {
 .policy-privacy {
   text-decoration: underline;
   color: var(--accent-color);
+}
+
+.flip-scale-up-ver {
+  animation: flip-scale-up-ver 0.5s linear both;
 }
 /*====================/MODAL INPUT===========*/
 /*====================/BTN SCROLL===========*/

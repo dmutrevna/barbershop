@@ -22,3 +22,6 @@ function handleScroll() {
     event.preventDefault();
   });
 };
+
+const animateTitle = document.querySelector('.main-title');
+animateTitle.classList.add('animate__bounceInRight', 'animate__animated', '2s');
