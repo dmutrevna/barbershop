@@ -190,7 +190,9 @@ img {
 .contact-phone-number:focus {
   color: var(--accent-color);
 }
-
+.command-soc-icon {
+  fill: var(--secondary-text-color-theme-dark);
+}
 /* ====================/HEADER============= */
 
 /* ====================HERO============= */
@@ -536,6 +538,7 @@ img {
 
 .barbers-soc-icon:is(:hover, :focus) {
   fill: var(--accent-color);
+  transition: var(--transition-duration-function);
 }
 /* ====================/EMPLOYEES============= */
 /* ====================GALLERY============= */
@@ -603,6 +606,7 @@ img {
   font-size: 42px;
   line-height: 1.17;
   letter-spacing: 0.05em;
+  padding-bottom: 44px;
   color: var(--secondary-text-color-theme-dark);
 }
 
@@ -619,6 +623,92 @@ img {
   letter-spacing: 0.05em;
   margin-bottom: 40px;
   color: var(--secondary-text-color-theme-dark);
+}
+
+/* Booking Contacts */
+
+.booking-contacts {
+  background-color: #191c26;
+  display: flex;
+  justify-content: space-between;
+  height: 634px;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.booking-contacts .booking {
+  padding-top: 130px;
+  padding-left: 216px;
+  padding-right: 30px;
+}
+
+.booking-contacts .contacts {
+  width: 50%;
+  background-image: url(../img/contacts-bg.png);
+}
+
+.booking-form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 570px;
+}
+
+.booking-form input {
+  padding-bottom: 8px;
+}
+
+.booking-form input,
+.booking-form textarea {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  color: rgba(157, 164, 189, 0.4);
+}
+
+.booking-form input:focus,
+.booking-form textarea:focus {
+  border-bottom: 1px solid #fff;
+  outline: transparent;
+  color: #fff;
+}
+
+.booking-form input::placeholder,
+.booking-form textarea::placeholder {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 11px;
+}
+
+.booking-form input:focus::placeholder,
+.booking-form textarea:focus::placeholder {
+  color: #fff;
+}
+
+.booking-form input {
+  width: 270px;
+  height: 24px;
+  margin-bottom: 44px;
+}
+
+.booking-form .textarea-wrapper {
+  width: 100%;
+  margin-bottom: 44px;
+}
+
+.booking-form textarea {
+  width: 570px;
+  height: 76px;
+  resize: none;
+  display: block;
+}
+
+.booking-form .button {
+  display: inline-block;
+  color: var(--button-first-color);
+}
+
+.booking-form .name-input + input {
+  margin-left: 30px;
 }
 /* ====================/CONTACT============= */
 /* ====================FOOTER============= */
@@ -854,3 +944,32 @@ img {
   color: var(--accent-color);
 }
 /*====================/MODAL INPUT===========*/
+/*====================/BTN SCROLL===========*/
+
+.scroll-button {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 3px 15px;
+  border: none;
+  opacity: 0.5;
+  border-radius: 25px;
+  transition: opacity 0.3s ease-in-out;
+
+  color: var(--secondary-text-color-theme-light);
+}
+
+.scroll-button.show {
+  display: block;
+}
+
+.scroll-button:hover,
+.scroll-button:focus {
+  background-color: var(--accent-color);
+  color: var(--secondary-text-color-theme-dark);
+}
+
+.scroll-button:hover {
+  opacity: 1;
+}
