@@ -1,0 +1,33 @@
+@media screen and (max-width: 481px) {
+  /* .container {
+    max-width: 480px;
+    padding-right: 31px;
+    padding-left: 31px;
+    margin: 0 auto;
+  } */
+
+  .page-nav {
+    display: none;
+  }
+
+  .contact-phone-number {
+    display: none;
+  }
+
+  .header-container .modal-btn {
+    display: none;
+  }
+  .menu-hamburger {
+    stroke: var(--secondary-text-color-theme-dark);
+    width: 40px;
+    height: 40px;
+  }
+
+  .hero-soc {
+    display: none;
+  }
+
+  .list-about {
+    display: none;
+  }
+}

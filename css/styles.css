@@ -31,11 +31,17 @@ html {
   scroll-behavior: smooth;
 }
 
-.container {
+/* .container {
   width: 100%;
   max-width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0;
+} */
+.container {
+  max-width: 480px;
+  padding-right: 31px;
+  padding-left: 31px;
   margin: 0 auto;
 }
 
@@ -147,17 +153,20 @@ img {
 .header-container {
   display: flex;
   align-items: center;
-}
-.page-header {
-  position: absolute;
-  width: 100%;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  justify-content: space-between;
 }
 
-.logo {
-  margin-right: 130px;
+.page-header {
+  position: absolute;
+
+  padding-top: 48px;
+  padding-bottom: 112px;
+  width: 100%;
 }
+
+/* .logo {
+  margin-right: 130px;
+} */
 
 .menu {
   display: flex;
@@ -202,7 +211,7 @@ img {
 /* ====================HERO============= */
 .main-title {
   font-family: var(--secondary-font);
-  font-size: 72px;
+  font-size: 48px;
   line-height: 1.18;
   letter-spacing: 0.05em;
   color: var(--secondary-text-color-theme-dark);
@@ -240,7 +249,10 @@ img {
 }
 
 .hero-right-side {
-  padding: 272px 100px 208px;
+  /* padding: 272px 100px 208px; */
+  padding-bottom: 209px;
+  padding-top: 208px;
+  padding-left: 31px;
   background-color: #393737;
   flex-grow: 1;
 
@@ -248,19 +260,33 @@ img {
       rgba(25, 28, 38, 0.2),
       rgba(25, 28, 38, 0.2)
     ),
-    url('../img/bg/Sliderimg1.jpg');
+    url('../img/bg/Sliderimg\ 3mobile1x.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-right-side {
+    background-image: linear-gradient(
+        rgba(25, 28, 38, 0.2),
+        rgba(25, 28, 38, 0.2)
+      ),
+      url('../img/bg/Sliderimg\ 3mobile2x.jpg');
+  }
+}
+
 .hero-description {
   color: var(--primary-text-color-theme-dark);
-  max-width: 360px;
+  max-width: 320px;
+  font-size: 16px;
 }
 .hero-left-side {
   display: flex;
   background-color: #fff;
+  padding: 0;
 }
 
 /* ====================/HERO============= */
@@ -270,12 +296,12 @@ img {
   font-size: 14px;
   line-height: 1.86;
   color: var(--secondary-text-color-theme-light);
-  margin-bottom: 42px;
+  margin-bottom: 40px;
 }
 
 .about-section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 84px;
+  padding-bottom: 84px;
 }
 
 .about-tittle {
@@ -283,7 +309,7 @@ img {
 }
 
 .about-pre-tittle {
-  font-size: 42px;
+  font-size: 28px;
   line-height: 1.17;
   letter-spacing: 0.05em;
   margin-bottom: 20px;
@@ -291,6 +317,7 @@ img {
 
 .about-after-title {
   margin-bottom: 20px;
+  font-size: 16px;
 }
 
 .list-about {
