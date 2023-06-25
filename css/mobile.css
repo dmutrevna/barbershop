@@ -27,4 +27,13 @@
   .list-about {
     display: none;
   }
+  .advantage-list {
+    min-width: 320px;
+    height: 100%;
+  }
+
+  .advantage-item {
+    max-width: 120px;
+    height: 100%;
+  }
 }
