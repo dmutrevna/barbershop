@@ -1,0 +1,106 @@
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-right: 39px;
+    padding-left: 39px;
+  }
+  @media screen and (min-width: 768px) {
+    .container-tablet {
+      max-width: 690px;
+    }
+  }
+  /*============================HEADER and HERO===========*/
+  .menu-hamburger {
+    display: none;
+  }
+  .contact-tablet {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .contact-phone-number {
+    margin-top: 20px;
+  }
+
+  .page-header {
+    padding-top: 52px;
+    padding-bottom: 0px;
+  }
+  .hero-right-side {
+    padding-top: 272px;
+    padding-left: 91px;
+    padding-bottom: 237px;
+  }
+  .menu {
+    padding-left: 19px;
+  }
+  .hero-description {
+    font-size: 18px;
+  }
+
+  .hero-description {
+    max-width: 360px;
+  }
+  /*============================ABOUT===========*/
+  .list-about {
+    display: inline-block;
+  }
+  .list-img-tablet {
+    margin-bottom: 20px;
+  }
+  .about-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  /*============================SERVICES===========*/
+  .services-container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .services-pre-title {
+    font-size: 42px;
+  }
+  .about-prices {
+    font-size: 18px;
+  }
+  /*============================ADVANTAGES===========*/
+  .advantages-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .advantage-list {
+    justify-content: space-between;
+  }
+  /*============================EMPLOYEES===========*/
+  .employees-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .barber-item img {
+    width: 450px;
+    margin: 0 auto;
+  }
+  .employees-title {
+    margin-left: 120px;
+  }
+  /*============================GALLERY===========*/
+  .list-gallery {
+    display: flex;
+    justify-content: space-between;
+  }
+  .item-gallery {
+    width: calc((100% - 80px) / 2);
+  }
+  .gallery-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  /*============================CONTACTS===========*/
+  .contact-wrap > .container {
+    display: flex;
+  }
+  .contact-wrap {
+    background-size: calc(50% + 15px) 100%;
+  }
+}

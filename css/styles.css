@@ -586,7 +586,6 @@ img {
 }
 
 .list-gallery {
-  /* display: flex; */
   flex-wrap: wrap;
   gap: 30px;
 }
@@ -625,13 +624,8 @@ img {
   background-image: url(../img/img1xmobile.png);
   background-color: #191c26;
   background-repeat: no-repeat;
-  /* background-position: right;
-  background-size: calc(50% + 15px) 100%; */
+  background-position: right;
 }
-
-/* .contact-wrap > .container {
-  display: flex;
-} */
 
 .online-section {
   padding-top: 84px;
@@ -743,6 +737,10 @@ img {
 .booking-form .button {
   display: inline-block;
   color: var(--button-first-color);
+}
+
+.cont-soc-icon {
+  vertical-align: middle;
 }
 
 /* .booking-form .name-input + input {

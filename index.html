@@ -25,6 +25,7 @@
 
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
   </head>
   <body>
     <!--HEADER-->
@@ -54,12 +55,14 @@
             </li>
           </ul>
         </nav>
-        <a class="contact-phone-number link" href="tel:+380441111111"
-          >+38 044 111 11 11</a
-        >
-        <button class="modal-btn" data-modal-open type="button">
-          Online-booking
-        </button>
+        <div class="contact-tablet">
+          <a class="contact-phone-number link" href="tel:+380441111111"
+            >+38 044 111 11 11</a
+          >
+          <button class="modal-btn" data-modal-open type="button">
+            Online-booking
+          </button>
+        </div>
         <svg class="menu-hamburger" width="28" height="28">
           <use href="./img/icons.svg#menu-hamburger"></use>
         </svg>
@@ -108,21 +111,47 @@
       <section class="about-section" id="about">
         <div class="container about-container">
           <ul class="list list-about">
-            <li>
-              <img
-                src="./img/img1.jpg"
-                alt="haircuts"
-                width="270"
-                height="445"
-              />
+            <li class="list-img-tablet">
+              <picture>
+                <source
+                  srcset="./img/img1.jpg 1x, ./img/img1desc2x.jpg 2x"
+                  type="image/jpg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./img/img1tablet1x.jpg 1x, ./img/img1tablet2x.jpg 2x"
+                  type="image/jpg"
+                  media="(min-width: 768px)"
+                />
+
+                <img
+                  src="./img/img1.jpg"
+                  alt="barber"
+                  width="370"
+                  height="346"
+                />
+              </picture>
             </li>
             <li>
-              <img
-                src="./img/img2.jpg"
-                alt="haircuts"
-                width="270"
-                height="445"
-              />
+              <picture>
+                <source
+                  srcset="./img/img2.jpg 1x, ./img/img2desc2x.jpg 2x"
+                  type="image/jpg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./img/img2tablet1x.jpg 1x, ./img/img2tablet2x.jpg 2x"
+                  type="image/jpg"
+                  media="(min-width: 768px)"
+                />
+
+                <img
+                  src="./img/img2.jpg"
+                  alt="barber"
+                  width="370"
+                  height="346"
+                />
+              </picture>
             </li>
           </ul>
 
@@ -611,23 +640,33 @@
           <section class="contact-section">
             <h2 class="contact-title">Contacts</h2>
             <address>
+              <svg class="cont-soc-icon" width="24" height="24">
+                <use href="./img/icons.svg#map"></use>
+              </svg>
               <a
                 class="link address"
                 href="https://goo.gl/maps/ofEJmoAD9a19XMb2A"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-                >st. Vasilkivska, 7A <br />
+              >
+                st. Vasilkivska, 7A <br />
                 Kyiv, 08132</a
               >
               <ul class="list contacts-list">
                 <li>
-                  <a class="link contacts" href="tel:+380441111111"
-                    >+38 044 111 11 11</a
+                  <svg class="cont-soc-icon" width="24" height="24">
+                    <use href="./img/icons.svg#phone"></use>
+                  </svg>
+                  <a class="link contacts" href="tel:+380441111111">
+                    +38 044 111 11 11</a
                   >
                 </li>
                 <li>
-                  <a class="contacts" href="mailto:barbershop@email.com"
-                    >barbershop@email.com</a
+                  <svg class="cont-soc-icon" width="24" height="24">
+                    <use href="./img/icons.svg#mail"></use>
+                  </svg>
+                  <a class="contacts" href="mailto:barbershop@email.com">
+                    barbershop@email.com</a
                   >
                 </li>
               </ul>
