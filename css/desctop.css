@@ -1,0 +1,159 @@
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /*============================HEADER and HERO===========*/
+  .contact-tablet {
+    display: inline-block;
+    margin-left: 120px;
+  }
+
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .page-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .main-title {
+    font-size: 72px;
+  }
+
+  .page-header > .container {
+    display: flex;
+  }
+
+  .contact-wrap {
+    max-width: 1600px;
+    margin: 0 auto;
+    background-image: url(../img/img1xmobile.png);
+    background-position-x: left;
+  }
+  .booking-contacts .contacts {
+    background-image: url(../img/contacts-bg.png);
+  }
+
+  .booking-form .name-input + input {
+    margin-left: 30px;
+  }
+
+  .contact-section {
+    padding-left: 120px;
+    width: calc(50% - 15px);
+  }
+
+  .online-section {
+    padding-bottom: 120px;
+    width: calc(50% + 15px);
+  }
+
+  /*============================ABOUT===========*/
+  .list-about {
+    display: flex;
+  }
+
+  .about-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .about-pre-tittle {
+    font-size: 40px;
+  }
+
+  .about-after-title {
+    font-size: 18px;
+  }
+  /*============================SERVICES===========*/
+  .services-container {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  /*============================ADVANTAGES===========*/
+
+  .advantages-container {
+    display: flex;
+    padding-left: 85px;
+  }
+
+  .advantages-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .advantage-wrap {
+    min-width: 500px;
+    padding-right: 101px;
+  }
+
+  .advantage-list {
+    justify-content: normal;
+    min-width: 370px;
+    height: 100%;
+    gap: 30px;
+  }
+
+  .advantage-item:nth-child(odd) {
+    margin-right: 30px;
+  }
+  /*============================EMPLOYEES===========*/
+  .employees-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .employees-title {
+    margin-left: 0px;
+  }
+
+  .barbers-list {
+    display: flex;
+  }
+
+  .barber-item {
+    width: calc((100% - 60px) / 3);
+  }
+
+  .barber-item img {
+    width: 370px;
+  }
+  /*============================GALLERY===========*/
+  .item-gallery {
+    width: calc((100% - 90px) / 4);
+  }
+
+  .gallery-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .gallery-title {
+    margin-bottom: 44px;
+  }
+  /* ====================CONTACT============= */
+  .contact-title {
+    font-size: 42px;
+  }
+
+  .online-title {
+    font-size: 42px;
+  }
+
+  .contact-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-left: 100px;
+  }
+  
+  .online-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    width: calc(50% + 15px);
+  }
+}

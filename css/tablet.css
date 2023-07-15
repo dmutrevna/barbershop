@@ -16,14 +16,16 @@
   .contact-tablet {
     display: flex;
     flex-direction: column-reverse;
+    align-items: flex-end;
   }
 
   .contact-phone-number {
     margin-top: 20px;
+    margin-left: 20px;
   }
 
   .page-header {
-    padding-top: 52px;
+    padding-top: 20px;
     padding-bottom: 0px;
   }
   .hero-right-side {
@@ -32,7 +34,7 @@
     padding-bottom: 237px;
   }
   .menu {
-    padding-left: 19px;
+    padding-left: 40px;
   }
   .hero-description {
     font-size: 18px;
@@ -40,6 +42,10 @@
 
   .hero-description {
     max-width: 360px;
+  }
+  .command-soc-icon {
+    padding-top: 10px;
+    fill: black;
   }
   /*============================ABOUT===========*/
   .list-about {
@@ -102,5 +108,13 @@
   }
   .contact-wrap {
     background-size: calc(50% + 15px) 100%;
+  }
+  .online-section {
+    padding-bottom: 84px;
+    width: calc(50% + 15px);
+  }
+
+  .contact-section {
+    padding-left: 100px;
   }
 }

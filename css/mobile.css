@@ -14,6 +14,7 @@
   .header-container .modal-btn {
     display: none;
   }
+
   .menu-hamburger {
     stroke: var(--secondary-text-color-theme-dark);
     width: 40px;
@@ -27,6 +28,7 @@
   .list-about {
     display: none;
   }
+
   .advantage-list {
     min-width: 320px;
     height: 100%;
